@@ -28,10 +28,10 @@ module.exports = {
       //   use: ['@svgr/webpack', 'url-loader'],
       // },
       // If images are used in project.
-      // {
-      //   test: /\.(png|jpe?g|gif|webp)$/,
-      //   type: 'asset/resource',
-      // },
+      {
+        test: /\.(png|jpe?g|gif|webp)$/,
+        type: 'asset/resource',
+      },
     ],
   },
   plugins: [
@@ -43,7 +43,7 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.ts', '.jsx', '.tsx'],
     alias: {
-      assests: path.resolve(__dirname, 'src/assets'),
+      assets: path.resolve(__dirname, 'src/assets'),
       components: path.resolve(__dirname, 'src/components'),
       views: path.resolve(__dirname, 'src/views'),
       themes: path.resolve(__dirname, 'src/themes'),
